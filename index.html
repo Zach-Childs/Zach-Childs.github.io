@@ -28,6 +28,13 @@ nav a:hover{border-color:var(--ink)}
 footer{background:#000;border-top:1px solid var(--line);padding:40px 20px;text-align:center;color:var(--dim);font-size:15px}
 footer ul{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 30px}
 footer .mark{font-family:"UnifrakturCook",Georgia,serif;font-size:30px;color:var(--ink);display:block;margin-bottom:14px}
+.products{max-width:1200px;margin:0 auto 80px;padding:0 20px;text-align:center}
+.products h2{font-family:"UnifrakturCook",Georgia,serif;font-weight:700;font-size:clamp(30px,5vw,44px);margin:0 0 28px;text-shadow:0 0 12px #000}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.item{background:rgba(0,0,0,.82);border:1px solid var(--line);padding:22px 22px 20px;display:flex;flex-direction:column;align-items:center;gap:6px;transition:border-color .2s}
+.item:hover{border-color:var(--dim)}
+.item svg{width:100%;aspect-ratio:1;max-width:240px;margin-bottom:10px}
+.item .pr{color:var(--dim);font-size:16px}
 </style></head><body>
 <header>
  <div class="util"><a href="#">Search</a><a href="#">Account &nbsp; Cart (0)</a></div>
@@ -42,9 +49,7 @@ footer .mark{font-family:"UnifrakturCook",Georgia,serif;font-size:30px;color:var
   <p>Handmade in small batches. Dark, ornate, and made to last.</p>
   <a class="btn" href="#">Shop the collection</a>
  </div></section>
- <section class="grid" aria-label="Shop by category">
-  <a href="#">Jewelry</a><a href="#">Clothing</a><a href="#">Eyewear</a><a href="#">Leather</a>
- </section>
+ <section class="products" aria-label="New arrivals"><h2>New arrivals</h2><div class="pgrid"><a class="item" href="#"><svg viewBox="0 0 100 100" fill="none" stroke="#bdbab3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label="Gothic Ring placeholder"><ellipse cx="50" cy="62" rx="22" ry="22"/><ellipse cx="50" cy="62" rx="15" ry="15"/><path d="M40 42 L50 26 L60 42 L50 48Z"/></svg><span class="nm">Gothic Ring</span><span class="pr">$000</span></a><a class="item" href="#"><svg viewBox="0 0 100 100" fill="none" stroke="#bdbab3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label="Cross Pendant placeholder"><path d="M28 12 Q50 52 72 12"/><path d="M50 46 V86 M36 58 H64 M46 46 L50 40 L54 46"/></svg><span class="nm">Cross Pendant</span><span class="pr">$000</span></a><a class="item" href="#"><svg viewBox="0 0 100 100" fill="none" stroke="#bdbab3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label="Heavy Hoodie placeholder"><path d="M36 18 L18 30 L10 70 L26 73 L28 90 H72 L74 73 L90 70 L82 30 L64 18 Q50 36 36 18Z"/><path d="M42 50 V72 M58 50 V72"/></svg><span class="nm">Heavy Hoodie</span><span class="pr">$000</span></a><a class="item" href="#"><svg viewBox="0 0 100 100" fill="none" stroke="#bdbab3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label="Core Tee placeholder"><path d="M36 20 L12 32 L20 50 L30 45 V86 H70 V45 L80 50 L88 32 L64 20 Q50 32 36 20Z"/></svg><span class="nm">Core Tee</span><span class="pr">$000</span></a><a class="item" href="#"><svg viewBox="0 0 100 100" fill="none" stroke="#bdbab3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label="Dark Frames placeholder"><rect x="8" y="40" width="36" height="26" rx="9"/><rect x="56" y="40" width="36" height="26" rx="9"/><path d="M44 48 Q50 43 56 48 M8 46 L2 40 M92 46 L98 40"/></svg><span class="nm">Dark Frames</span><span class="pr">$000</span></a><a class="item" href="#"><svg viewBox="0 0 100 100" fill="none" stroke="#bdbab3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label="Leather Wallet placeholder"><rect x="14" y="30" width="72" height="46" rx="4"/><path d="M14 44 H86"/><circle cx="72" cy="60" r="4"/></svg><span class="nm">Leather Wallet</span><span class="pr">$000</span></a><a class="item" href="#"><svg viewBox="0 0 100 100" fill="none" stroke="#bdbab3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label="Chain Bracelet placeholder"><ellipse cx="50" cy="50" rx="34" ry="34"/><ellipse cx="50" cy="50" rx="26" ry="26"/><path d="M50 16 V24 M50 76 V84 M16 50 H24 M76 50 H84"/></svg><span class="nm">Chain Bracelet</span><span class="pr">$000</span></a><a class="item" href="#"><svg viewBox="0 0 100 100" fill="none" stroke="#bdbab3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label="Wool Cap placeholder"><path d="M20 62 Q20 28 50 28 Q80 28 80 62Z"/><path d="M20 62 Q2 66 6 72 Q50 78 80 64"/><circle cx="50" cy="28" r="3"/></svg><span class="nm">Wool Cap</span><span class="pr">$000</span></a></div></section>
 </main>
 <footer id="contact">
  <span class="mark">Imitari</span>
