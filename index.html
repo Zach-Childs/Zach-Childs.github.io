@@ -35,25 +35,42 @@ footer .mark{font-family:"UnifrakturCook",Georgia,serif;font-size:30px;color:var
 .item:hover{border-color:var(--dim)}
 .item svg{width:100%;aspect-ratio:1;max-width:240px;margin-bottom:10px}
 .item .pr{color:var(--dim);font-size:16px}
+nav a[aria-current]{border-color:var(--ink)}
+.about{max-width:760px;margin:70px auto 90px;padding:0 20px}
+.about article{background:rgba(0,0,0,.82);border:1px solid var(--line);padding:clamp(32px,7vw,80px) clamp(24px,7vw,80px);text-align:center}
+.about h1{font-family:"UnifrakturCook",Georgia,serif;font-weight:700;font-size:clamp(38px,7vw,64px);margin:0 0 34px;line-height:1.1}
+.about p{font-size:clamp(19px,2.4vw,22px);line-height:1.75;margin:0 0 26px;color:#cfccc6}
+.about .creed{font-family:"UnifrakturCook",Georgia,serif;font-weight:700;font-size:clamp(26px,4.5vw,38px);line-height:1.35;color:var(--ink);margin:46px 0 0;padding-top:40px;border-top:1px solid var(--line)}
+.about .creed span{display:block}
+
+.item{padding:0 0 20px}
+.item .ph{width:100%;aspect-ratio:1;background:#f4f4f2;display:grid;place-items:center;overflow:hidden;margin-bottom:12px}
+.item .ph img{width:100%;height:100%;object-fit:contain;transition:transform .4s}
+.item:hover .ph img{transform:scale(1.04)}
+.item .nm{padding:0 14px}
+.pagehead{text-align:center;padding:50px 20px 30px}
+.pagehead h1{font-family:"UnifrakturCook",Georgia,serif;font-weight:700;font-size:clamp(38px,7vw,64px);margin:0;text-shadow:0 0 14px #000}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;max-width:1200px;margin:0 auto 70px;padding:0 20px}
+.cats a{background:rgba(0,0,0,.82);border:1px solid var(--line);text-align:center;padding:0 0 18px;font-size:20px;transition:border-color .2s}
+.cats a:hover{border-color:var(--dim)}
+.cats .ph{aspect-ratio:1;background:#f4f4f2;margin-bottom:14px}
+.cats img{width:100%;height:100%;object-fit:contain}
 </style></head><body>
 <header>
  <div class="util"><a href="#">Search</a><a href="#">Account &nbsp; Cart (0)</a></div>
- <a class="logo" href="#">Imitari</a>
- <nav aria-label="Main"><ul>
-  <li><a href="#">New</a></li><li><a href="#">Jewelry</a></li><li><a href="#">Clothing</a></li><li><a href="#">Eyewear</a></li><li><a href="#">Leather</a></li><li><a href="#">Home</a></li><li><a href="about.html">About</a></li><li><a href="#contact">Contact</a></li>
- </ul></nav>
+ <a class="logo" href="index.html">Imitari</a>
+ <nav aria-label="Main"><ul><li><a href="index.html#new">New</a></li><li><a href="clothing.html">Clothing</a></li><li><a href="jewelry.html">Jewelry</a></li><li><a href="accessories.html">Accessories</a></li><li><a href="about.html">About</a></li><li><a href="index.html#contact">Contact</a></li></ul></nav>
 </header>
-<main>
- <section class="hero"><div>
+<main><section class="hero"><div>
   <h1>Imitari</h1>
   <p>Handmade in small batches. Dark, ornate, and made to last.</p>
   <a class="btn" href="#">Shop the collection</a>
  </div></section>
- <section class="products" aria-label="New arrivals"><h2>New arrivals</h2><div class="pgrid"><a class="item" href="#"><svg viewBox="0 0 100 100" fill="none" stroke="#bdbab3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label="Gothic Ring placeholder"><ellipse cx="50" cy="62" rx="22" ry="22"/><ellipse cx="50" cy="62" rx="15" ry="15"/><path d="M40 42 L50 26 L60 42 L50 48Z"/></svg><span class="nm">Gothic Ring</span><span class="pr">$000</span></a><a class="item" href="#"><svg viewBox="0 0 100 100" fill="none" stroke="#bdbab3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label="Cross Pendant placeholder"><path d="M28 12 Q50 52 72 12"/><path d="M50 46 V86 M36 58 H64 M46 46 L50 40 L54 46"/></svg><span class="nm">Cross Pendant</span><span class="pr">$000</span></a><a class="item" href="#"><svg viewBox="0 0 100 100" fill="none" stroke="#bdbab3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label="Heavy Hoodie placeholder"><path d="M36 18 L18 30 L10 70 L26 73 L28 90 H72 L74 73 L90 70 L82 30 L64 18 Q50 36 36 18Z"/><path d="M42 50 V72 M58 50 V72"/></svg><span class="nm">Heavy Hoodie</span><span class="pr">$000</span></a><a class="item" href="#"><svg viewBox="0 0 100 100" fill="none" stroke="#bdbab3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label="Core Tee placeholder"><path d="M36 20 L12 32 L20 50 L30 45 V86 H70 V45 L80 50 L88 32 L64 20 Q50 32 36 20Z"/></svg><span class="nm">Core Tee</span><span class="pr">$000</span></a><a class="item" href="#"><svg viewBox="0 0 100 100" fill="none" stroke="#bdbab3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label="Dark Frames placeholder"><rect x="8" y="40" width="36" height="26" rx="9"/><rect x="56" y="40" width="36" height="26" rx="9"/><path d="M44 48 Q50 43 56 48 M8 46 L2 40 M92 46 L98 40"/></svg><span class="nm">Dark Frames</span><span class="pr">$000</span></a><a class="item" href="#"><svg viewBox="0 0 100 100" fill="none" stroke="#bdbab3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label="Leather Wallet placeholder"><rect x="14" y="30" width="72" height="46" rx="4"/><path d="M14 44 H86"/><circle cx="72" cy="60" r="4"/></svg><span class="nm">Leather Wallet</span><span class="pr">$000</span></a><a class="item" href="#"><svg viewBox="0 0 100 100" fill="none" stroke="#bdbab3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label="Chain Bracelet placeholder"><ellipse cx="50" cy="50" rx="34" ry="34"/><ellipse cx="50" cy="50" rx="26" ry="26"/><path d="M50 16 V24 M50 76 V84 M16 50 H24 M76 50 H84"/></svg><span class="nm">Chain Bracelet</span><span class="pr">$000</span></a><a class="item" href="#"><svg viewBox="0 0 100 100" fill="none" stroke="#bdbab3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label="Wool Cap placeholder"><path d="M20 62 Q20 28 50 28 Q80 28 80 62Z"/><path d="M20 62 Q2 66 6 72 Q50 78 80 64"/><circle cx="50" cy="28" r="3"/></svg><span class="nm">Wool Cap</span><span class="pr">$000</span></a></div></section>
-</main>
+<section class="cats" aria-label="Shop by category"><a href="clothing.html"><div class="ph"><img src="images/jacket.jpg" alt=""></div>Clothing</a><a href="jewelry.html"><div class="ph"><img src="images/ring.jpg" alt=""></div>Jewelry</a><a href="accessories.html"><div class="ph"><img src="images/cap.jpg" alt=""></div>Accessories</a></section>
+<section class="products" id="new"><h2>New arrivals</h2><div class="pgrid"><a class="item" href="clothing.html#jacket" id="jacket"><div class="ph"><img src="images/jacket.jpg" alt="Memento Mori Leather Jacket, front and back" loading="lazy"></div><span class="nm">Memento Mori Leather Jacket</span><span class="pr">$000</span></a><a class="item" href="clothing.html#jeans" id="jeans"><div class="ph"><img src="images/jeans.jpg" alt="Cathedral Angel Cargo Jeans, front and back" loading="lazy"></div><span class="nm">Cathedral Angel Cargo Jeans</span><span class="pr">$000</span></a><a class="item" href="clothing.html#tee" id="tee"><div class="ph"><img src="images/tee.jpg" alt="Memento Mori Tee, front and back" loading="lazy"></div><span class="nm">Memento Mori Tee</span><span class="pr">$000</span></a><a class="item" href="jewelry.html#ring" id="ring"><div class="ph"><img src="images/ring.jpg" alt="Cathedral Ring, front and back" loading="lazy"></div><span class="nm">Cathedral Ring</span><span class="pr">$000</span></a><a class="item" href="jewelry.html#cuff" id="cuff"><div class="ph"><img src="images/cuff.jpg" alt="Memento Mori Cuff, front and back" loading="lazy"></div><span class="nm">Memento Mori Cuff</span><span class="pr">$000</span></a><a class="item" href="accessories.html#cap" id="cap"><div class="ph"><img src="images/cap.jpg" alt="Memento Mori Cap, front and back" loading="lazy"></div><span class="nm">Memento Mori Cap</span><span class="pr">$000</span></a></div></section></main>
 <footer id="contact">
  <span class="mark">Imitari</span>
- <ul><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li><li><a href="about.html">About</a></li><li><a href="#">Stores</a></li><li><a href="#">Contact</a></li></ul>
+ <ul><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li><li><a href="about.html">About</a></li><li><a href="#">Contact</a></li></ul>
  &copy; 2026 Imitari. All rights reserved.
 </footer>
 </body></html>
